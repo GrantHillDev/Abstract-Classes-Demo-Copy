@@ -27,7 +27,7 @@ namespace ConsoleUI
         //{//stubbed methods obviously have no implementation, and even if they did, there'd be no point to them being instantiated.
         //the main point of incorporating such a method type here is to ensure that whenever it gets called later on, that it's supposed to do something, and that behavior gets determined through any classes which inherit it and make use of it specifically.
         //}
-        public abstract void DriveAbstract();//abtractly marked methods within a class cannot have curled brackets {} as they're not needed, but C# will throw an error at you if you attempt to write them in, even if the scope they govern contains nothing.
+        public abstract void DriveAbstract();//abstractly marked methods within a class cannot have curled brackets {} as they're not needed, but C# will throw an error at you if you attempt to write them in, even if the scope they govern contains nothing.
 
         public virtual void DriveVirtual()//looks like virtual method types can be coded with no defined body as well.
         {

@@ -17,7 +17,7 @@ namespace ConsoleUI
 
         //public void DriveVirtual()//public virtual void DriveVirtual()//keeping the virtual keyword for this method serves no purpose here, in the inherited class, and essentially is really just a placeholder for the override keyword to be written in its place.
         //{
-            //Console.WriteLine("The car is cruising at a high speed....");//Now, we can alter the behavior of this previously virtual method created in the base class to whatever we want it to do for this inherited class.
+        //Console.WriteLine("The car is cruising at a high speed....");//Now, we can alter the behavior of this previously virtual method created in the base class to whatever we want it to do for this inherited class.
         //}//as noticed here, not all members of an abstract class have to be marked as abstract members, but some can be if desired. It's also worth noting that derived classes inheriting from an abstract class don't necessarily have to be marked as abstract types either.
 
         //public override void Testing1()//so, as it turns out, this whole block of code can be called over/moved over with the click of a button -- here's how it works. First, and abstract method must be written within the abstract base class, and regardless of whether it's stubbed out or not as a method, you can still right click on the derived class (which is Car in this case) and select the quick actions and refactoring option, which will then offer you the choice of including missing abstract members, and the following block of code as shown here in this example is what's brought over, with you having to type any of it out.

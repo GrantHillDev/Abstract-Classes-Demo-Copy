@@ -46,8 +46,8 @@ namespace ConsoleUI
             var motorCycleOne = new Motorcycle() { HasSideCar = true, Make = "Harley Davidson", Model = "Sportster", Year = "2016" };//this still runs without the parentheses written in at the end var motorCycleOne = new Motorcycle instead of var motorCycleOne = new Motorcycle().
             //var VehicleOne = new Vehicle();//Remember, we cannot create an instance of a base abstract class.
             var vehicleOne = new Car() { Make = "Mitsubishi", Model = "Galant", Year = "2009" };//used a constructor written within the car class.
-            var vehicleTwo = new Motorcycle() {Make = "Yamaha", Model = "MT-07", Year = "2021" };//used a constructor written within the Motorcycle class.
-            var vehicleThree = new MotorScooter() { Make = "EMOVE", Model = "Cruiser S 52V Dual Suspension", Year = "2024"};//wow, this new instance of the vehicle class worked via instantiating it through the MotorScooter class when it had literally nothing written within its scope.... it had only inherited from the vehcile base abstract class.
+            var vehicleTwo = new Motorcycle() { Make = "Yamaha", Model = "MT-07", Year = "2021" };//used a constructor written within the Motorcycle class.
+            var vehicleThree = new MotorScooter() { Make = "EMOVE", Model = "Cruiser S 52V Dual Suspension", Year = "2024" };//wow, this new instance of the vehicle class worked via instantiating it through the MotorScooter class when it had literally nothing written within its scope.... it had only inherited from the vehicle base abstract class.
 
             /*
              * Add the 4 vehicles to the list
@@ -79,7 +79,7 @@ namespace ConsoleUI
             }
 
             // Call each of the drive methods for one car and one motorcycle
-            
+
             Console.WriteLine("These vehicles actually did have some added features we wanted to ensure were made mention of to you.");
             Console.WriteLine();
             Console.WriteLine($"Does the {carOne.Year} {carOne.Make} {carOne.Model} have its own trunk? {carOne.HasTrunk}.");
