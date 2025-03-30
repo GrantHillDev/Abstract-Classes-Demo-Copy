@@ -79,8 +79,30 @@ namespace ConsoleUI
             }
 
             // Call each of the drive methods for one car and one motorcycle
+            
+            Console.WriteLine("These vehicles actually did have some added features we wanted to ensure were made mention of to you.");
+            Console.WriteLine();
+            Console.WriteLine($"Does the {carOne.Year} {carOne.Make} {carOne.Model} have its own trunk? {carOne.HasTrunk}.");
+            Console.WriteLine();
+            Console.WriteLine($"Does the {motorCycleOne.Year} {motorCycleOne.Make} {motorCycleOne.Model} have its own side car? {motorCycleOne.HasSideCar}.");
 
-            #endregion            
+            //var carList = new List<Car>();//has to be a list of type Car (class) -- a class that;'s alreayd been defined.
+
+            //foreach (var car in carList)//decided I'd write out lists to do the printing to the console work, instead of just doing mutliple Console.WriteLines.
+            //{
+            //    Console.WriteLine($"Does the {carOne.Year} {carOne.Make} {carOne.Model} have its own trunk? {carOne.HasTrunk}.");
+            //    Console.WriteLine();
+            //}
+
+            //var motorCycleList = new List<Motorcycle>();
+
+            //foreach (var motorcycle in motorCycleList)
+            //{
+            //    Console.WriteLine($"Does the {carOne.Year} {carOne.Make} {carOne.Model} have its own trunk? {carOne.HasTrunk}.");
+            //    Console.WriteLine();
+            //}
+
+            #endregion
             //Console.ReadLine();//don't know who wrote this here, but it's not needed.
         }
     }
